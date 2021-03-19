@@ -27,6 +27,10 @@ function Login() {
                     employeeList: DashboardData,
                 }),
             )
+        }else{
+            const x = document.getElementById("toast")
+            x.className = "show";
+            setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
         }
     }
     return (
@@ -69,6 +73,8 @@ function Login() {
                 <span><b>Password:</b> {LoginCredentials.password}</span>
             </div>
             </div>
+
+            <div id="toast">Incorrect Username/Passwrord</div>
         </>
     )
 }

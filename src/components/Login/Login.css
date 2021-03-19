@@ -55,3 +55,24 @@ font-size: 18px;
 border: 1px solid #4e9b89;
 background: aliceblue;
 }
+
+#toast {
+    visibility: hidden;
+    max-width: fit-content;
+    margin: auto;
+    background-color: #4e9b89;
+    color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    position: fixed;
+    z-index: 1;
+    left: 10px;
+    top: 10px;
+    font-size: 18px;
+    white-space: nowrap;
+    font-family: Inter;
+}
+
+#toast.show {
+    visibility: visible;   
+}
